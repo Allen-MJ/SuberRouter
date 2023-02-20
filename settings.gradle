@@ -1,0 +1,6 @@
+include ':test'
+include ':suber_annotation'
+include ':suber_complier'
+include ':suber_router'
+include ':app'
+rootProject.name = "SuberRouter"

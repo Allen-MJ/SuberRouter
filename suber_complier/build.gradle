@@ -21,7 +21,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.suber.router.complier' // 这是需要打包的Module的包名，根据需要更换
                 artifactId = 'router-complier' //多模块打包时用到，只打包一个Module用不到
-                version = '1.0.0'
+                version = '1.0.2'
             }
         }
     }
@@ -29,7 +29,7 @@ afterEvaluate {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(path: ':suber_annotation')
+    api project(path: ':suber_annotation')
 
     implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
